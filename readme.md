@@ -3,10 +3,10 @@
 
 ### Установка ###
 - `установка шаблона:` [sa-template-1](https://www.npmjs.com/package/sa-template-1)  
-- `npm install sa-source`  
+- `npm install sa-source --save`  
 
 ### Особенности установки/обновления ###
-- Копируются, если не существуют: readme.md, папка src
+- папка src копируется, если не существует  
 - package.json дополняется зависимостями
 
 ### Используемые технологии ###
