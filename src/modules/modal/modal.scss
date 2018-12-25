@@ -1,0 +1,79 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+  z-index: 900;
+
+  &_active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba($black, .7);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  transition: transform .3s;
+  z-index: 3;
+
+  &:hover {
+    transform: rotate(90deg) scale(1.2);
+  }
+}
+
+.modal__close-icon {
+  width: 100%;
+  height: 100%;
+  fill: $white;
+
+  @include media-breakpoint-down(xs) {
+    fill: $black;
+  }
+}
+
+.modal__content {
+  width: 400px;
+  height: 600px;
+  max-height: calc(100% - 40px);
+  background: $white;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include media-breakpoint-down(xs) {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+.modal__tab {
+  display: none;
+
+  &_active {
+    display: flex;
+  }
+}

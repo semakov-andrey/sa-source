@@ -1,0 +1,45 @@
+.images__row {
+  margin-top: 50px;
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 25px;
+  }
+}
+
+.images__row + .images__row {
+  @include media-breakpoint-down(xs) {
+    margin-top: 35px;
+  }
+}
+
+.images__column + .images__column {
+  @include media-breakpoint-down(xs) {
+    margin-top: 25px;
+  }
+}
+
+.images__icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+
+  @include media-breakpoint-down(lg) {
+    width: 125px;
+    height: 125px;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 125px;
+    height: 125px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 150px;
+    height: 150px;
+  }
+}

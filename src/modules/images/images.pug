@@ -1,0 +1,15 @@
+mixin images
+  .images__row.row
+    .images__column.col-12.col-sm-6.col-md-4
+      +icon('83', 'images__icon')
+    .images__column.d-none.d-md-block.col-md-4
+      +icon('168', 'images__icon')
+    .images__column.col-12.col-sm-6.col-md-4
+      +icon('403', 'images__icon')
+  .images__row.row
+    .images__column.col-12.col-sm-6.col-md-4
+      img.images__image(src="images/1.jpg")
+    .images__column.d-none.d-md-block.col-md-4
+      img.images__image(src="images/2.gif")
+    .images__column.col-12.col-sm-6.col-md-4
+      img.images__image(src="images/3.png")

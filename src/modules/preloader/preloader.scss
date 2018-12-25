@@ -1,0 +1,35 @@
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+  z-index: 1000;
+
+  &_active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.preloader__logotype {
+  width: 375px * .5;
+  height: 375px * .5;
+
+  @include media-breakpoint-down(md) {
+    width: 375px * .375;
+    height: 375px * .375;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 375px * .25;
+    height: 375px * .25;
+  }
+}

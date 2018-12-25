@@ -1,0 +1,26 @@
+$black:             #000000;
+$white:             #ffffff;
+$blue:              #269bff;
+$red:               #ff2626;
+
+$grid-gutter-width-xs: 20px;
+$grid-gutter-width-sm: 25px;
+$grid-gutter-width: 25px;
+
+$container-max-widths: (
+  md: 720px + $grid-gutter-width,
+  lg: 960px + $grid-gutter-width,
+  xl: 1200px + $grid-gutter-width,
+  //xxl: 1500px + $grid-gutter-width,
+  //xxxl: 1800px + $grid-gutter-width
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  //xxl: 1600px,
+  //xxxl: 1920px
+);

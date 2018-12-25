@@ -1,0 +1,12 @@
+extends ../modules/layout/layout.pug
+
+block page
+  .page
+    .container
+      h1 Contents
+      ul
+        li: a(href="./" data-burger) Burger
+        li: a(href="./" data-modal="modal-one") Modal 1
+        li: a(href="./" data-modal="modal-two") Modal 2
+        li: a(href="./images.html") Images
+        li: a(href="./style.html") Style

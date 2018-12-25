@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 80px;
+  box-shadow: 0 -2px 10px 0 rgba($black, .25);
+  font-weight: 500;
+}

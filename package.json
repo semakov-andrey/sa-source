@@ -1,0 +1,113 @@
+{
+  "name": "sa-source",
+  "version": "1.0.0",
+  "description": "sa-source",
+  "main": "install.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:semakov_andrey/sa-source.git"
+  },
+  "author": "Semakov Andrey",
+  "license": "ISC",
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build --production",
+    "template": "node node_modules/sa-template-1/install.js",
+    "module": "node node_modules/sa-template-1/module.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "body-scroll-lock": "^2.6.1",
+    "bootstrap": "^4.2.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.0.2",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.23.6",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "emitty": "^1.4.0",
+    "glob": "^7.1.2",
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprites": "^4.1.2",
+    "gulp-svgo": "^1.5.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.0",
+    "imagemin-pngquant": "^6.0.0",
+    "node-sass": "^4.11.0",
+    "sa-template-1": "^3.0.6",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "config": {
+    "entries": {
+      "css": [
+        "main"
+      ],
+      "js": [
+        "main"
+      ]
+    },
+    "browsers": [
+      "> 0.5%"
+    ],
+    "directories": {
+      "source": "src",
+      "development": "tmp",
+      "production": "build",
+      "tasks": {
+        "copy": [
+          "other",
+          ""
+        ],
+        "html": [
+          "pages",
+          ""
+        ],
+        "css": [
+          "styles",
+          "styles"
+        ],
+        "js": [
+          "scripts",
+          "scripts"
+        ],
+        "fonts": [
+          "fonts",
+          "fonts"
+        ],
+        "images": [
+          "images",
+          "images"
+        ],
+        "sprite": [
+          "images/svg",
+          "images"
+        ]
+      }
+    },
+    "tasks": [
+      "copy",
+      "html",
+      "css",
+      "js",
+      "fonts",
+      "images",
+      "sprite"
+    ]
+  }
+}

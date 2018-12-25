@@ -1,0 +1,57 @@
+.page {
+  flex: 1 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  @include media-breakpoint-only(xs) {
+    padding-left: $grid-gutter-width-xs;
+    padding-right: $grid-gutter-width-xs;
+  }
+
+  @include media-breakpoint-only(sm) {
+    padding-left: $grid-gutter-width-sm;
+    padding-right: $grid-gutter-width-sm;
+    max-width: none;
+  }
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+img {  
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+.table {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table__element {
+  width: 100%;
+  min-width: 800px;
+}
+
+th {
+  text-align: left;
+}

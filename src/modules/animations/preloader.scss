@@ -1,0 +1,17 @@
+@keyframes preloader {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.preloader__logotype {
+  animation: preloader 1.8s linear infinite;
+}

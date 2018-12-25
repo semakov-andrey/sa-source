@@ -1,0 +1,32 @@
+include ../icon/icon
+include ../preloader/preloader
+include ../modal/modal
+include ../burger/burger
+include ../site/site
+
+doctype html
+html(lang="ru")
+  head
+    title Template
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no,maximum-scale=1.0,viewport-fit=cover")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="format-detection" content="address=no")
+    meta(name="description" content="Template")
+    meta(name="keywords" content="Template")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-TileImage" content="images/favicon-windows-144x144.png")
+    meta(name="msapplication-config" content="browserconfig.xml")
+    link(href="site.webmanifest" rel="manifest")
+    link(href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png")
+    link(href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png")
+    link(href="images/favicon-ios-180x180.png" rel="apple-touch-icon" sizes="180x180")
+    link(href="images/favicon-macos.svg" rel="mask-icon" color="#5bbad5")
+    link(href="styles/main.css" rel="stylesheet")
+    script(src="scripts/main.js" defer)
+  body.body_hidden
+    .svg-sprite#svg-sprite(data-path="images/sprite.svg")
+    +preloader
+    +modal
+    +burger
+    +site

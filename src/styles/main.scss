@@ -1,0 +1,25 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'fonts';
+@import 'typography';
+@import '../modules/layout/layout';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/utilities/display';
+@import 'general';
+
+@import '../modules/icon/icon';
+@import '../modules/preloader/preloader';
+@import '../modules/burger/burger';
+@import '../modules/modal/modal';
+@import '../modules/modal-one/modal-one';
+@import '../modules/modal-two/modal-two';
+@import '../modules/site/site';
+@import '../modules/header/header';
+@import '../modules/footer/footer';
+@import '../modules/images/images';
+
+@import '../modules/animations/preloader';

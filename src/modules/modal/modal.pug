@@ -1,0 +1,11 @@
+include ../modal-one/modal-one
+include ../modal-two/modal-two
+
+mixin modal
+  .modal#modal
+    .modal__overlay
+    a.modal__close(href="./" data-modal)
+      +icon('close', 'modal__close-icon')
+    .modal__content
+      +modal-one
+      +modal-two
