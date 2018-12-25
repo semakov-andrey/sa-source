@@ -10,6 +10,7 @@
   "author": "Semakov Andrey",
   "license": "ISC",
   "scripts": {
+    "install": "node install.js",
     "start": "gulp serve",
     "build": "gulp build --production",
     "template": "node node_modules/sa-template-1/install.js",
