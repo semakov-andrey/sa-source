@@ -11,6 +11,7 @@ let templateJSON      = require('./package.json');
 let packageJSON       = require(`${project}package.json`);
 
 /* update configuration */
+delete templateJSON.dependencies['ncp'];
 let json = {
   ...packageJSON,
   dependencies: {

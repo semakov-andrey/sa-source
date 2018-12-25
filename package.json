@@ -20,6 +20,7 @@
     "@babel/polyfill": "^7.2.5",
     "body-scroll-lock": "^2.6.1",
     "bootstrap": "^4.2.1",
+    "ncp": "^2.0.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
