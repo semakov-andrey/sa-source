@@ -29,7 +29,7 @@ if(!fs.existsSync(path.resolve(__dirname, project, 'src'))) {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
         fs.renameSync(path.resolve(__dirname, project, 'src/scripts/main.wp.js'), path.resolve(__dirname, project, 'src/scripts/main.js'));
-        fs.renameSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'), path.resolve(__dirname, project, 'src/modules/layout/layout.js'));
+        fs.renameSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'), path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
       } else {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.wp.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'));
