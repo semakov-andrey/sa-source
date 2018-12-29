@@ -28,11 +28,14 @@ if(!fs.existsSync(path.resolve(__dirname, project, 'src'))) {
       if(packageJSON.devDependencies && packageJSON.devDependencies['sa-template-2']) {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
+        fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/images/images.pug'));
         fs.renameSync(path.resolve(__dirname, project, 'src/scripts/main.wp.js'), path.resolve(__dirname, project, 'src/scripts/main.js'));
         fs.renameSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'), path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
+        fs.renameSync(path.resolve(__dirname, project, 'src/modules/images/images.wp.pug'), path.resolve(__dirname, project, 'src/modules/images/images.pug'));
       } else {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.wp.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'));
+        fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/images/images.wp.pug'));
       }
       console.log('Success: source updated');
     } else {
