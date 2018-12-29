@@ -25,7 +25,7 @@ fs.writeFile(path.resolve(__dirname, project, 'package.json'), JSON.stringify(js
 if(!fs.existsSync(path.resolve(__dirname, project, 'src'))) {
   ncp.ncp(path.resolve(__dirname, 'src'), path.resolve(__dirname, project, 'src'), error => {
     if(!error) {
-      if(packageJSON.devDependencies && packageJSON['sa-template-2']) {
+      if(packageJSON.devDependencies && packageJSON.devDependencies['sa-template-2']) {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
         fs.renameSync(path.resolve(__dirname, project, 'src/scripts/main.wp.js'), path.resolve(__dirname, project, 'src/scripts/main.js'));
