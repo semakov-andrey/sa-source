@@ -2,7 +2,7 @@
 ###### Исходники для вёрстки сайта. ######
 
 ### Установка ###
-- `установка шаблона:` [sa-template-1](https://www.npmjs.com/package/sa-template-1)  
+- `установка шаблона:` [sa-template-1](https://www.npmjs.com/package/sa-template-1) или [sa-template-2](https://www.npmjs.com/package/sa-template-2)
 - `npm install sa-source --save`  
 
 ### Особенности установки/обновления ###
