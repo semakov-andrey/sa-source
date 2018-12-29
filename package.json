@@ -2,12 +2,26 @@
   "name": "sa-source",
   "version": "1.0.7",
   "description": "sa-source",
+  "keywords": [
+    "source",
+    "pug",
+    "scss",
+    "js",
+    "woff",
+    "woff2",
+    "jpg",
+    "gif",
+    "png",
+    "webp",
+    "svg",
+    "mp4"
+  ],
   "main": "install.js",
   "repository": {
     "type": "git",
     "url": "git@gitlab.com:semakov_andrey/sa-source.git"
   },
-  "author": "Semakov Andrey",
+  "author": "Semakov Andrey <semakov.andrey.web@yandex.ru>",
   "license": "ISC",
   "scripts": {
     "install": "node install.js",
