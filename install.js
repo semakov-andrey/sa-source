@@ -15,7 +15,7 @@ const DEV                       = packageJSON && (packageJSON.name === 'sa-templ
 if (!fs.existsSync(path.resolve(__dirname, project, 'src'))) {
   ncp.ncp(path.resolve(__dirname, 'src'), path.resolve(__dirname, project, 'src'), error => {
     if (!error) {
-      if (packageJSON.devDependencies && packageJSON.devDependencies['sa-template-2']) {
+      if (packageJSON.devDependencies && (packageJSON.devDependencies['sa-template-2'] || packageJSON.name === 'sa-template-2')) {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/scripts/main.js'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.pug'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/images/images.pug'));
