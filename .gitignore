@@ -12,3 +12,4 @@ bash.exe.stackdump
 .yo-rc.json
 gulpfile.js
 tasks
+.stylelintrc
