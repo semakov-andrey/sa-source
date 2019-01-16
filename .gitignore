@@ -13,3 +13,4 @@ bash.exe.stackdump
 gulpfile.js
 tasks
 .stylelintrc
+.eslintrc
