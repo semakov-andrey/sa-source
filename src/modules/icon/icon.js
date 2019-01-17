@@ -9,7 +9,9 @@ export default class Icon {
       const ajax = new XMLHttpRequest();
       ajax.open('GET', url, true);
       ajax.send();
-      ajax.onload = () => icons.innerHTML = ajax.responseText;
+      ajax.onload = () => {
+        icons.innerHTML = ajax.responseText;
+      };
     }
   }
 }
