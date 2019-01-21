@@ -39,7 +39,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "sa-template-1": "^3.6.1"
+    "sa-template-1": "^3.6.2"
   },
   "config": {
     "devServer": {
