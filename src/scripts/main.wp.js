@@ -4,8 +4,8 @@ require.context('../pages');
 require.context('../images/svg');
 import '../styles/main.scss';
 import '../images/content/favicon-windows-150x150.png';
-import '../images/content/android-chrome-192x192.png';
-import '../images/content/android-chrome-512x512.png';
+import '../images/content/favicon-android-192x192.png';
+import '../images/content/favicon-android-512x512.png';
 
 import '@babel/polyfill';
 import Icon             from '../modules/icon/icon';
