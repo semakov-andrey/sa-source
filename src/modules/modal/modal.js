@@ -11,10 +11,11 @@ export default class Modal {
     const triggers = [...document.querySelectorAll('[data-modal]')];
     triggers.forEach(trigger => trigger.addEventListener('click', event => {
       event.preventDefault();
-      if (this.modal.classList.contains('modal_active')) this.hide();
-      else {
-        const id = trigger.dataset.modal;
-        if (id) this.show(id);
+      const id = trigger.dataset.modal;
+      if (id && id !== 'data-modal') {
+        this.show(id);
+      } else {
+        this.hide();
       }
     }));
   }
