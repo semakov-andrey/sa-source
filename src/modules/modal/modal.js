@@ -1,12 +1,13 @@
 'use strict';
 
-import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default class Modal {
   constructor() {
     this.modal = document.getElementById('modal');
     if (this.modal) this.events();
   }
+
   events() {
     const triggers = [...document.querySelectorAll('[data-modal]')];
     triggers.forEach(trigger => trigger.addEventListener('click', event => {
@@ -19,12 +20,14 @@ export default class Modal {
       }
     }));
   }
+
   show(id) {
     const tab = document.getElementById(id);
     if (tab) tab.classList.add('modal__tab_active');
     this.modal.classList.add('modal_active');
     disableBodyScroll(this.modal);
   }
+
   hide() {
     this.modal.classList.remove('modal_active');
     enableBodyScroll(this.modal);

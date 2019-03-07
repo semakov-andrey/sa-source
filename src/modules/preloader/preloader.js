@@ -1,6 +1,6 @@
 'use strict';
 
-import {disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default class Preloader {
   constructor() {
@@ -14,10 +14,12 @@ export default class Preloader {
       setTimeout(() => this.hide(), time);
     }
   }
+
   show() {
     this.preloader.classList.add('preloader_active');
     disableBodyScroll(this.preloader);
   }
+
   hide() {
     document.body.classList.remove('body_hidden');
     this.preloader.classList.remove('preloader_active');
