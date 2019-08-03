@@ -1,5 +1,3 @@
-'use strict';
-
 const project                   = '../../';
 const fs                        = require('fs');
 const path                      = require('path');
@@ -27,7 +25,7 @@ if (!fs.existsSync(path.resolve(__dirname, project, 'src'))) {
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/layout/layout.wp.pug'));
         fs.unlinkSync(path.resolve(__dirname, project, 'src/modules/images/images.wp.pug'));
       }
-      console.log('Success: source updated');
+      console.info('Success: source updated');
     } else {
       console.error('\x1b[31m%s\x1b[0m', `Error: ${error}`);
     }
@@ -45,4 +43,4 @@ const json = {
     ...templateJSON.dependencies
   }
 };
-fs.writeFile(path.resolve(__dirname, project, 'package.json'), JSON.stringify(json, null, 2), 'utf8', error => error ? console.error('\x1b[31m%s\x1b[0m', `Error: ${error}`) : console.log('Success: configuration updated'));
+fs.writeFile(path.resolve(__dirname, project, 'package.json'), JSON.stringify(json, null, 2), 'utf8', error => error ? console.error('\x1b[31m%s\x1b[0m', `Error: ${error}`) : console.info('Success: configuration updated'));

@@ -1,5 +1,3 @@
-'use strict';
-
 import '@babel/polyfill';
 import cssVars          from 'css-vars-ponyfill';
 import detection        from 'sa-polyfills/build/sa-detection';

@@ -1,5 +1,3 @@
-'use strict';
-
 export default class Icon {
   constructor() {
     const icons = document.getElementById('svg-sprite');

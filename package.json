@@ -1,4 +1,7 @@
 {
+  "browserslist": [
+    "> 0.5%"
+  ],
   "name": "sa-source",
   "version": "1.1.7",
   "description": "sa-source",
@@ -19,7 +22,7 @@
   "main": "install.js",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:semakov_andrey/sa-source.git"
+    "url": "git@github.com:semakov-andrey/sa-source.git"
   },
   "author": "Semakov Andrey <semakov.andrey.web@yandex.ru>",
   "license": "ISC",
@@ -41,7 +44,7 @@
     "sa-polyfills": "^1.1.2"
   },
   "devDependencies": {
-    "sa-template-1": "^3.6.2"
+    "sa-template-1": "^3.7.2"
   },
   "config": {
     "devServer": {
@@ -58,9 +61,6 @@
         "main"
       ]
     },
-    "browsers": [
-      "> 0.5%"
-    ],
     "directories": {
       "source": "src",
       "development": "tmp",

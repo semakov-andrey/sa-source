@@ -1,5 +1,3 @@
-'use strict';
-
 require.context('../pages');
 require.context('../images/svg');
 import '../styles/main.scss';

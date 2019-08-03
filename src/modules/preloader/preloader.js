@@ -1,5 +1,3 @@
-'use strict';
-
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export default class Preloader {
